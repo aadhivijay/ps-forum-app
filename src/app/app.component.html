@@ -1,20 +1,31 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <h1 appBlueColor>FORUM</h1>
-  <div>
-    <form id="form1">
-      NAME<br>
-      <input class="inputform1" type="text" name="name"><br><br>
-      EMAIL ID<br>
-      <input class="inputform1" type="email" name="emailid"><br><br>
-      PHONE NUMBER<br>
-      <input class="inputform1" type="text" name="phonenuumber"><br><br>
-      PASSWORD<br>
-      <input class="inputform1" type="password" name="tax"><br><br><br>
+</div>
+<router-outlet></router-outlet>
+<div id="signupform">
+  <form method="get">
+    NAME<br>
+    <input class="input" type="text" name="name"><br><br>
+    EMAIL ID<br>
+    <input class="input" type="email" name="emailid"><br><br>
+    PHONE NUMBER<br>
+    <input class="input" type="text" name="phonenuumber"><br><br>
+    PASSWORD<br>
+    <input class="input" type="password" name="tax"><br><br><br>
 
-      <input type="submit" value="SIGN UP"> <input type="reset" value="RESET">
-    </form>
-  </div>
+    <a routerLink="/home"><input class="button" type="submit" value="SIGN UP"></a>
+    <input class="button" type="reset" value="RESET">    
+  </form>
 </div>
 
-    
+<div id="signinform" style="float: left">
+  <form>
+    EMAIL ID<br>
+    <input class="input" type="email" name="name"><br><br>
+    PASSWORD<br>
+    <input class="input" type="password" name="password"><br><br><br>
+
+    <input class="button" type="submit" value="SIGN IN"> <input class="button" type="reset" value="RESET">
+  </form>
+</div>
