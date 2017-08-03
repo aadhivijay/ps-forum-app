@@ -8,6 +8,7 @@ import { BlueColorDirective } from './blue-color.directive';
 import { HomeComponent } from './home/home.component';
 import { CreatepostComponent } from './createpost/createpost.component';
 import { EditpostComponent } from './editpost/editpost.component';
+import { CommentpostComponent } from './commentpost/commentpost.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { EditpostComponent } from './editpost/editpost.component';
     HomeComponent,
     CreatepostComponent,
     EditpostComponent,
+    CommentpostComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,6 +34,10 @@ import { EditpostComponent } from './editpost/editpost.component';
       {
         path: 'editpost',
         component: EditpostComponent
+      },
+      {
+        path: 'commentpost',
+        component: CommentpostComponent
       }
     ])
   ],

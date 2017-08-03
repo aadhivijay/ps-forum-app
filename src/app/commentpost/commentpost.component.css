@@ -1,0 +1,14 @@
+* {
+    font-family: verdana;
+}
+
+.button {
+    width: 150px;
+    height: 50px;
+    border-color: black;
+    background-color: white;
+}
+
+#commentdiv {
+    text-align: center;
+}
