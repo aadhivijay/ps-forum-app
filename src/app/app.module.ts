@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 import { BlueColorDirective } from './blue-color.directive';
 import { HomeComponent } from './home/home.component';
 import { CreatepostComponent } from './createpost/createpost.component';
+import { EditpostComponent } from './editpost/editpost.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { CreatepostComponent } from './createpost/createpost.component';
     BlueColorDirective,
     HomeComponent,
     CreatepostComponent,
+    EditpostComponent,
   ],
   imports: [
     BrowserModule,
@@ -26,6 +28,10 @@ import { CreatepostComponent } from './createpost/createpost.component';
       {
         path: 'createpost',
         component: CreatepostComponent
+      },
+      {
+        path: 'editpost',
+        component: EditpostComponent
       }
     ])
   ],

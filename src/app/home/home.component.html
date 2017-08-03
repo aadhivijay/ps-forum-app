@@ -1,11 +1,14 @@
 <div id="header">
   <div id="namelogout">
-    <input type="text" name="name"><br><br>
-    <a routerLink="/createpost" routerLinkActive="Active"><button>CREATE POST</button></a>
-    <a href=""><button>LOG OUT</button></a>
+    <input type="text" name="name" placeholder="nameofuser" style="border: none; background-color: yellow"><br><br>
+    <a routerLink="/createpost" routerLinkActive="Active"><button class="button">CREATE POST</button></a>
+    <a routerLink="/" routerLinkActive="Active"><button class="button">LOG OUT</button></a>
   </div>
 </div>
 
-<div>
-  <router-outlet></router-outlet>
+<div style="height: 200px">  
+  Threads appears here...<br>
+  <a routerLink="/editpost" routerLinkActive="Active"><button class="button">edit</button></a>
 </div>
+
+<router-outlet></router-outlet>

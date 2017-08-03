@@ -1,6 +1,6 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center; background-color: black; color:yellow; height: 100px">
-  <p style="font-size: 50px; padding-top: 20px">FORUM</p>
+  <p style="font-size: 50px">FORUM</p>
 </div>
 
 <router-outlet></router-outlet>
@@ -21,14 +21,15 @@
   </form>
 </div>
 
-<div id="signinform" style="float: left">
+<div id="signinform">
   <form>
     EMAIL ID<br>
     <input class="input" type="email" name="name"><br><br>
     PASSWORD<br>
     <input class="input" type="password" name="password"><br><br><br>
 
-    <input class="button" type="submit" value="SIGN IN"> <input class="button" type="reset" value="RESET">
+    <a routerLink="/home" routerLinkActive="Active"><input class="button" type="submit" value="SIGN IN"></a>
+    <input class="button" type="reset" value="RESET">
   </form>
 </div>
 
