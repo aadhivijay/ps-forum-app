@@ -1,8 +1,10 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1 appBlueColor>FORUM</h1>
+<div style="text-align:center; background-color: black; color:yellow; height: 100px">
+  <p style="font-size: 50px; padding-top: 20px">FORUM</p>
 </div>
+
 <router-outlet></router-outlet>
+
 <div id="signupform">
   <form method="get">
     NAME<br>
@@ -14,7 +16,7 @@
     PASSWORD<br>
     <input class="input" type="password" name="tax"><br><br><br>
 
-    <a routerLink="/home"><input class="button" type="submit" value="SIGN UP"></a>
+    <a routerLink="/home" routerLinkActive="Active"><input class="button" type="submit" value="SIGN UP"></a>
     <input class="button" type="reset" value="RESET">    
   </form>
 </div>
@@ -29,3 +31,4 @@
     <input class="button" type="submit" value="SIGN IN"> <input class="button" type="reset" value="RESET">
   </form>
 </div>
+

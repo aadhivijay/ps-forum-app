@@ -15,7 +15,7 @@
     padding-right: 300px; 
     padding-bottom: 30px; 
     text-align: center;
-    background-color: thistle;
+    background-color: goldenrod;
 }
 
 #signinform {
@@ -26,12 +26,12 @@
     padding-right: 30px; 
     padding-bottom: 30px;
     text-align: center; 
-    background-color: aqua;
+    background-color: yellow;
 }
 
 .button {
     width: 100px;
     height: 50px;
-    border-color: blue;
-    background-color: none;
+    border-color: black;
+    background-color: white;
 }
