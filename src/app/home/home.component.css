@@ -4,13 +4,14 @@
 
 #header {
     height: 150px;
-    width: 1335px;
+    width: 1333px;
     background-color: yellow;    
 }
 
 #namelogout {
     text-align: right;
     padding-top: 30px;
+    padding-right: 20px;
     padding-bottom: 30px;
     float: right;
 }

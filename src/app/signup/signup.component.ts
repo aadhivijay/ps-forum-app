@@ -20,6 +20,7 @@ export class SignupComponent implements OnInit {
       emailid: new FormControl("", Validators.required),
       password: new FormControl("", [Validators.required, Validators.minLength(4)])      
     });
+    
   }
 
 }

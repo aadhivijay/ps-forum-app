@@ -3,13 +3,12 @@
   <p style="font-size: 50px">FORUM</p>
 </div>
 
-<router-outlet>
-  <div>
-    <a routerLink="/signup" routerLinkActive="Active"><button class="button">SIGN UP</button></a>   
-    <a routerLink="/signin" routerLinkActive="Active"><button class="button">SIGN IN</button></a>
+<router-outlet></router-outlet>
+  <div style="text-align: center; padding-top: 20px" *ngIf="value == 1">
+    <a routerLink="/signup" routerLinkActive="Active" (click)="onclickevent()"><button class="button">SIGN UP</button></a>   
+    <a routerLink="/signin" routerLinkActive="Active" (click)="onclickevent()"><button class="button">SIGN IN</button></a>
   </div> 
   
-  <p></p>
-</router-outlet>
+  
 
 

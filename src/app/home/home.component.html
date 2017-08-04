@@ -6,10 +6,14 @@
   </div>
 </div>
 
-<div style="height: 200px">  
-  Threads appears here...<br>
-  <a routerLink="/editpost" routerLinkActive="Active"><button class="button">edit</button></a>
-  <a routerLink="/commentpost" routerLinkActive="Active"><button class="button">comment</button></a>
+<div style="height: 400px">  
+  <br>
+  <li *ngFor="let t of threads">
+      {{ t.title }}<br>{{t.body}}
+      <a routerLink="/editpost" routerLinkActive="Active"><button class="button">edit</button></a>
+  <a routerLink="/commentpost" routerLinkActive="Active"><button class="button">comment</button></a><br><br>
+  </li>
+  
 </div>
 
 <router-outlet></router-outlet>

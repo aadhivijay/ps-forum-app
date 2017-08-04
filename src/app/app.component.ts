@@ -8,4 +8,8 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class AppComponent {
   title = 'app';
+  value = 1;
+  onclickevent() {
+    this.value = 0;
+  }
 }
