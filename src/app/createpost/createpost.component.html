@@ -1,11 +1,11 @@
 <div id="createpost">
-  <form>
+  <form [formGroup]="form">
     <br>
-    <input id="title" type="text" name="thread_title" placeholder="title"><br><br>
-    <textarea id="body" rows="20" cols="60" id="body" type="text" name="thread_body" placeholder="body"></textarea>
+    <input id="title" type="text" name="title" placeholder="title" formControlName="title"><br><br>
+    <textarea id="body" rows="20" cols="60" id="body" type="text" name="body" placeholder="body" formControlName="body"></textarea>
     <br>
 
-    <input class="button" type="submit" value="POST">
+    <input class="button" type="submit" [disabled]="!form.valid" value="POST">
     <input class="button" type="reset" value="RESET">
   </form>
 </div>

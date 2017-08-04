@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-editpost',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditpostComponent implements OnInit {
 
-  constructor() { }
+  form;
+
+  constructor() {
+  }
 
   ngOnInit() {
+    this.form = new FormGroup({
+      title: new FormControl("", Validators.required),
+      body: new FormControl("", Validators.required)
+    })
   }
 
 }

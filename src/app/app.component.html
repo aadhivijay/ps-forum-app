@@ -3,33 +3,13 @@
   <p style="font-size: 50px">FORUM</p>
 </div>
 
-<router-outlet></router-outlet>
+<router-outlet>
+  <div>
+    <a routerLink="/signup" routerLinkActive="Active"><button class="button">SIGN UP</button></a>   
+    <a routerLink="/signin" routerLinkActive="Active"><button class="button">SIGN IN</button></a>
+  </div> 
+  
+  <p></p>
+</router-outlet>
 
-<div id="signupform">
-  <form method="get">
-    NAME<br>
-    <input class="input" type="text" name="name"><br><br>
-    EMAIL ID<br>
-    <input class="input" type="email" name="emailid"><br><br>
-    PHONE NUMBER<br>
-    <input class="input" type="text" name="phonenuumber"><br><br>
-    PASSWORD<br>
-    <input class="input" type="password" name="tax"><br><br><br>
-
-    <a routerLink="/home" routerLinkActive="Active"><input class="button" type="submit" value="SIGN UP"></a>
-    <input class="button" type="reset" value="RESET">    
-  </form>
-</div>
-
-<div id="signinform">
-  <form>
-    EMAIL ID<br>
-    <input class="input" type="email" name="name"><br><br>
-    PASSWORD<br>
-    <input class="input" type="password" name="password"><br><br><br>
-
-    <a routerLink="/home" routerLinkActive="Active"><input class="button" type="submit" value="SIGN IN"></a>
-    <input class="button" type="reset" value="RESET">
-  </form>
-</div>
 

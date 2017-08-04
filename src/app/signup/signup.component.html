@@ -1,0 +1,19 @@
+<div id="signupform">
+  <form [formGroup] = "form">
+    NAME<br>
+    <input class="input" type="text" name="name" formControlName="name"><br><br>    
+    EMAIL ID<br>
+    <input class="input" type="email" name="emailid" formControlName="emailid"><br><br>
+    PHONE NUMBER<br>
+    <input class="input" type="text" name="phonenuumber" formControlName="phonenumber"><br>
+    (10 digit phone number)
+    <br><br>
+    PASSWORD<br>
+    <input class="input" type="password" name="password" formControlName="password"><br>
+    (min Length: 4 and max Length: 20)
+    <br><br><br>
+
+    <a routerLink="/home" routerLinkActive="Active"><input type="submit" [disabled]="!form.valid" class="button" value="SIGN UP"></a>
+    <input class="button" type="reset" value="RESET">    
+  </form>    
+</div>

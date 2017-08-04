@@ -1,6 +1,9 @@
 <div id="commentdiv">
-  Add Comment:<br>
-  <textarea rows="3" cols="50" placeholder="comment here"></textarea><br>
-  <button class="button">ADD COMMENT</button>
-  <button class="button">CANCEL</button>
+  <form [formGroup]="form">
+    Add Comment:<br>
+    <textarea cols="30" rows="3" type="text" placeholder="comment here" name="comment" formControlName="comment"></textarea>
+    <br>
+    <input type="submit" class="button" [disabled]="!form.valid" value="ADD COMMENT">
+    <a routerLink="/home" routerLinkActive="Active"><input type="reset" class="button" value="BACK"></a>
+  </form>
 </div>
